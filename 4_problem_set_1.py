@@ -65,7 +65,12 @@ for number in list_even_numbers:
 # ### **Problem 6: Reverse a String**
 
 # Ask the user for a string, then print the string **backwards**.
-
+name = input ("Enter a string: ")
+reversed_name = ""
+for char in name:
+    reversed_name = char +reversed_name
+print("reversed string:", reversed_name)
+print(reversed_name[::-1])
 
 
 # ### **Problem 7: Multiplication Table**
@@ -73,7 +78,8 @@ for number in list_even_numbers:
 # Ask the user for a number **n**, then print the **multiplication table** for n from
 # n × 1 up to n × 10.
 
-
+# n= input("Choose a number ")
+# print("")
 
 # ### **Problem 8: Count Occurrences**
 
@@ -86,6 +92,24 @@ for number in list_even_numbers:
 
 # Ask the user for a number **n**, then print the first **n numbers** of the Fibonacci sequence.
 
+def car_price(n):
+    if n <= 0 :
+        return 0
+    elif n ==1:
+        return 1
+    else:
+        return car_price(n-1) + car_price(n-2)
+print(car_price(6))
+
+# 1 1 2 3 5 8 13 21
+
+def fibonacci(n):
+    if n in [1,2]:
+        return 1
+
+    return fibonacci(n-1) +fibonacci(n-2)
+for i in range(1,10):
+    print(fibonacci(i))
 
 
 # ### **Problem 10: Pattern Printing**
