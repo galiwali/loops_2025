@@ -7,12 +7,21 @@
 # ### **Problem 1: Print Numbers 1 to 10
 
 # Write a program that prints the numbers from **1 to 10**, each on a new line.
+list1to10 = list(range(1,11))
+for numbers in list1to10:
+    print(numbers)
 
 
 
 # ### **Problem 2: Sum of Numbers
 
 # Ask the user for a number **n**, then calculate and display the **sum of all numbers from 1 to n**.
+n= int(input("Enter a number: "))
+total_sum = 0
+for number in range (1, n +1):
+    total_sum+= number
+    print("The sum of numbers from 1 to", n, "is:", total_sum)
+
 
 
 
